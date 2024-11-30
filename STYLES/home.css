@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 150px;
+    background-color: gold;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#header img{
+    width: 40%;
+    height: 80px;
+    margin-top: 40px;
+}
+#nav{
+    width: 100%;
+}
+#nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#nav a{
+    color: gold;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 0.3s;
+}
+#nav a:hover{
+    color: black;
+    font-size: 21px;
+    background-color: gold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#nav ul{
+    list-style-type: none;
+}
+main{
+    width: 100%;
+    height: 70vh;
+}
+#section{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+#section h1{
+    position: absolute;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    letter-spacing: 1.5rem;
+    animation: Specialanim 1s ease-in normal;
+}
+@keyframes Specialanim {
+    from{margin-left: -2rem; font-size: 1rem;}
+    to{margin-left: 2rem; font-size: 3rem;}
+}
+
+#section p{
+    position: absolute;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 2rem;
+    margin-top: 7rem;
+    line-height: 2rem;
+    font-weight: 300;
+    animation: paragraphanim 2s ease-in normal;
+}
+@keyframes paragraphanim {
+    from{margin-left: 50rem; font-size: 0.2rem; margin-bottom: 20rem;}
+    to{margin-left: 2rem; font-size: 1rem;}
+}
+#section img{
+    width: 99%;
+    height: 50vh;
+    margin-bottom: 3rem;
+    opacity: 0.5;
+}
+.blog{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.offer{
+    width: 30%;
+    background-color: gold;
+    height: 80vh;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.offer h2{
+    margin-top: 1.5rem;
+}
+.images{
+    width: 100%;
+    height: 15rem;
+}
+.offer p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.offer a{
+    color: blue;
+    font-size: 12px;
+}
+.offer a:hover{
+    color: red;
+    font-size: 15px;
+    transition: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    height: 7rem;
+    margin-top: 500px;
+    background-color: gold;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+footer img{
+    width: 10rem;
+    height: 3rem;
+    margin-left: 3rem;
+}
+footer h3{
+    margin-right: 5rem;
+    color: black;
+}
+#copyright{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+}
+#copyright img{
+    width: 3rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    #section img{
+        height: 80vh;
+    }
+
+    .blog{
+        margin-top: 12em;
+    }
+
+    .offer{
+        height: 95vh;
+    }
+
+    #section p{
+        width: 60%;
+    }
+
+    footer{
+        margin-top: 40em;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .offer{
+        width: 45%;
+        margin-bottom: 5em;
+        margin-top: 6em;
+    }
+    .offer:nth-of-type(3){
+        width: 95%;
+        margin-top: -3em;
+    }
+
+    .offer:nth-of-type(3) a{
+        font-size: 1.3em;
+    }
+
+    #section img{
+        height: 110vh;
+    }
+
+    .blog{
+        margin-top: 15em;
+    }
+
+    footer{
+        margin-top: 80em;
+    }
+
+    #section p{
+        margin-top: 10em;
+    }
+}
+
+@media (max-width: 550px) {
+    #nav li{
+        width: 46%;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    #nav ul{
+        margin-bottom: 0em;
+    }
+
+    #section img{
+        height: 130vh;
+    }
+
+    .offer{
+        width: 100%;
+        margin-top: 12em;
+    }
+
+    .offer:nth-of-type(3){
+        width: 100%;
+    }
+
+    .offer a{
+        font-size: 1.3em;
+    }
+
+    .offer:nth-of-type(1){
+        margin-bottom: -10em;
+    }
+
+    .offer:nth-of-type(2){
+        margin-top: 12em;
+    }
+
+    footer{
+        margin-top: 120em;
+        padding-bottom: 2em;
+    }
+}
+
+@media (max-width: 450px) {
+    #nav li{
+        margin-left: 1em;
+        width: 100%;
+    }
+
+    #section h1{
+        font-size: 1.5em;
+    }
+
+    .offer a, .offer:nth-of-type(3) a{
+        font-size: 1em;
+    }
+
+    #section p{
+        width: 80%;
+        margin-top: 8em;
+    }
+}
+
+@media (max-width: 300px) {
+    #section h1{
+        font-size: 1.2em;
+        letter-spacing: 1em;
+    }
+
+    #section p{
+        font-size: 0.8em;
+    }
+
+    #copyright{
+        font-size: 0.8em;
+    }
+
+    #copyright img{
+        width: 1.5em;
+        height: 1.2em;
+    }
+}
+
+@media (max-width: 227px) {
+    #section h1{
+        font-size: 1.1em;
+        letter-spacing: 0.8em;
+    }
+
+    #section img{
+        height: 155vh;
+    }
+
+    .offer:nth-of-type(1){
+        margin-top: 22em;
+    }
+
+    .offer{
+        height: 110vh;
+    }
+
+    .offer h2{
+        font-size: 1.2em;
+    }
+
+    .offer:nth-of-type(3) a{
+        margin-left: 1em;
+    }
+
+    footer{
+        margin-top: 145em;
+    }
+
+    footer img{
+        width: 8em;
+        margin-left: 2em;
+        height: 2em;
+    }
+
+    #copyright{
+        margin-left: -2em;
+    }
+}
