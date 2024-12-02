@@ -299,11 +299,11 @@ footer h3{
 @media (max-width: 400px) {
     
     #section img{
-        height: 100vh;
+        height: 90vh;
     }
 
     footer{
-        margin-top: 300em;
+        margin-top: 200em;
     }
 }
 
