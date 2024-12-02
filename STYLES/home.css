@@ -302,8 +302,12 @@ footer h3{
         height: 90vh;
     }
 
+    .offer:nth-of-type(1){
+        margin-top: 10em;
+    }
+
     footer{
-        margin-top: 200em;
+        margin-top: 140em;
     }
 }
 
